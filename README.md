@@ -37,7 +37,7 @@ xelatex -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 main
 │   ├── related.tex
 │   ├── git-workflows.tex
 │   ├── modern-OSS.tex
-|   ├── workflows-in-OSS.tex
+|   ├── tips.tex
 │   └── conclusion.tex
 └── README.md
 ```
