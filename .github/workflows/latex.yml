@@ -11,7 +11,7 @@ jobs:
       - uses: xu-cheng/texlive-action/small@v1
         with:
           run: |
-            tlmgr install ctex gbt7714 subfiles
+            tlmgr install ctex biblatex-gb7714-2015 subfiles
             xelatex -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 main.tex
             biber main
             xelatex -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 main.tex
