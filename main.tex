@@ -1,6 +1,6 @@
 \documentclass[twocolumn]{ctexart}
-\usepackage[backref]{hyperref}
-\usepackage{gbt7714} % 参考文献格式, 见 https://github.com/zepinglee/gbt7714-bibtex-style
+\usepackage{hyperref}
+\usepackage[backend=biber,style=gb7714-2015,hyperref=true,backref]{biblatex}
 \usepackage{geometry}
 
 % 规范:
@@ -17,6 +17,8 @@
 \author{庄嘉毅~李泽昊~郭子荀}
 \date{December 2022}
 
+\addbibresource{reference.bib}
+
 \usepackage{subfiles}
 
 \begin{document}
@@ -31,7 +33,6 @@
 \subfile{sections/conclusion.tex}
 
 % 参考文献
-\bibliographystyle{gbt7714-numerical}
-\bibliography{reference}
+\printbibliography[heading=bibintoc,title={参考文献}]
 
 \end{document}
