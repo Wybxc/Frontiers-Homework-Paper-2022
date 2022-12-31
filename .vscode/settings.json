@@ -21,10 +21,10 @@
             ]
         },
         {
-            "name": "xelatex -> bibtex -> xelatex*2",
+            "name": "xelatex -> biber -> xelatex*2",
             "tools": [
                 "xelatex",
-                "bibtex",
+                "biber",
                 "xelatex",
                 "xelatex"
             ]
@@ -60,8 +60,8 @@
             ]
         },
         {
-            "name": "bibtex",
-            "command": "bibtex",
+            "name": "biber",
+            "command": "biber",
             "args": [
                 "%DOCFILE%"
             ]
@@ -71,6 +71,9 @@
         "*.aux",
         "*.bbl",
         "*.blg",
+        "*.brf",
+        "*.bcf",
+        "*.run.xml",
         "*.idx",
         "*.ind",
         "*.lof",
